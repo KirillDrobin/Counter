@@ -26,15 +26,15 @@
                                     <action selector="counterAppend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uMN-Yz-BSx"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnF-Kz-Eww">
-                                <rect key="frame" x="40" y="73" width="312" height="243"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnF-Kz-Eww">
+                                <rect key="frame" x="40" y="73" width="312" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="spatial" fixedFrame="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" editable="NO" text="История изменений:" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eOd-Ct-opP">
-                                <rect key="frame" x="76" y="324" width="240" height="205"/>
+                                <rect key="frame" x="76" y="269" width="240" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <color key="textColor" systemColor="labelColor"/>

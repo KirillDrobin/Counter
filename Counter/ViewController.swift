@@ -25,8 +25,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         counterLabel.text = "0"
+        
         historyView.text = "История изменений: \n \n"
         
+                
 }
     //функция вывода текущей даты, времени
     func dateTime() -> String {
@@ -35,6 +37,11 @@ class ViewController: UIViewController {
         dateFormatter.dateFormat = "dd.MM.yy, HH:mm:ss"
         let currentDateTime = dateFormatter.string(from: dateTime)
         return currentDateTime
+    }
+    
+    //функция автоскролла
+    func autoScroll() {
+        historyView.contentOffset = CGPoint(x: 0, y: historyView.contentSize.height - historyView.frame.size.height)
     }
     
     // начальное значение счетчика
@@ -49,6 +56,7 @@ class ViewController: UIViewController {
         
         historyView.text += "\(dateTime()): значение изменено на +1 \n \n"
         
+        autoScroll()
     }
     
     // уменьшение счетчика на -1
@@ -63,6 +71,7 @@ class ViewController: UIViewController {
 
         counterLabel.text = "Значение счетчика: \(counter)"
         
+        autoScroll()
     }
     
     // обнуление счетчика
@@ -73,6 +82,7 @@ class ViewController: UIViewController {
         
         historyView.text += "\(dateTime()): значение сброшено \n \n"
         
+        autoScroll()
     }
     
 }
